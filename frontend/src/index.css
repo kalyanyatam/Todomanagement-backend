@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input[type="text"], input[type="date"], select {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card styling */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.card-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Task list item styling */
+.card-body h5 {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.card-body h5:hover {
+  background-color: #f1f1f1;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Search bar styling */
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Task complete toggle styling */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .card {
+    padding: 15px;
+  }
+
+  input[type="text"], input[type="date"], select, input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .card-body h5 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
